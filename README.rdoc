@@ -1,5 +1,5 @@
 == README
 
-Rss reader for hacker news 
+RSS reader for hacker news 
 
 https://hackernewsreader.herokuapp.com/
