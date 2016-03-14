@@ -1,0 +1,6 @@
+= article.headline
+- if current_user
+  = link_to (current_user.favorited?(article) ? "remove from favorites" : "add to favorites"), 'javascript:void(0)', class: 'add-favorites', data: {id: article.id}
+- else 
+  = link_to "add to favorites", new_user_session_path, class: 'add-favorites', data: {id: article.id}
+br
