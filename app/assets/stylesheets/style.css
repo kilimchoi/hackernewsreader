@@ -1,0 +1,30 @@
+body { 
+  padding-top: 70px;
+}
+
+.articles-container {
+  background-color: rgba(0,0,0,0.03);
+  padding: 20px;
+}
+
+.article {
+  padding: 10px;
+  color: #777777;
+}
+
+.article h2 {
+  margin-top: 0;
+}
+
+.article a:visited {
+  color: #918F8C;
+}
+
+h4.article-link { 
+  margin: 0;
+}
+
+.article-url {
+  display: inline-block;
+  width: 85%;
+}

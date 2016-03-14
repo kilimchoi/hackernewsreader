@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user!, :only => [:add_to_favorites]
-
+  before_action :authenticate_user!
   def add_to_favorites
     @user = current_user
     @article = Article.find params[:article_id]

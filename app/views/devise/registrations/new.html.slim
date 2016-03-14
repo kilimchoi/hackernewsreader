@@ -1,0 +1,21 @@
+.articles-container
+  .row
+    .col-lg-12: .block
+      .row: .col-lg-6  
+        h2 Sign up
+        .email-form
+          = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+            - if resource.errors.any?
+              .alert.alert-danger
+                = devise_error_messages!
+            .form-group
+              = f.label :email
+              = f.email_field :email, autofocus: true, class: 'form-control'
+            .form-group
+              = f.label :password
+              = f.password_field :password, autocomplete: "off", class: 'form-control'
+
+            = f.submit "Sign up", class: 'btn btn-primary'
+        br
+        | Have an account? 
+        = link_to "Log in", new_user_session_path
